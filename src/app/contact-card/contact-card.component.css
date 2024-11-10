@@ -32,16 +32,16 @@
 }
 
 .detail-group {
-  display: flex;
+  display: flex; /* flexible layout*/
   flex-direction: column;
-  gap: 0.5em; 
+  gap: 0.5em; /* responive unit*/
 }
 
 .detail-label {
   color: #666;
   font-size: 1rem; 
   font-weight: 500;
-}
+}J
 
 .detail-value {
   color: #333;
