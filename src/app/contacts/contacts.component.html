@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="sidebar">
+    <input type="text" placeholder="Search" (input)="onSearch($event)" />
+    <div class="contacts-title">CONTACTS</div>
+    <div *ngFor="let contact of filteredContacts" 
+         (click)="selectContact(contact)" 
+         [class.selected]="contact === selectedContact"
+         class="contact-item">
+      <div class="initials">{{ getInitials(contact) }}</div>
+      <div class="contact-info">
+        <p>{{ contact.firstName }} {{ contact.lastName }}</p>
+        <p>{{ contact.cellNumber }}</p>
+      </div>
+    </div>
+  </div>
+  <app-contact-card *ngIf="selectedContact" [contact]="selectedContact"></app-contact-card>
+</div>

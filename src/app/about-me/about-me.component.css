@@ -1,0 +1,103 @@
+.about-me-container {
+  padding: 90px;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.about-me-heading {
+  text-align: start;
+  font-weight: bold;
+  color: rgb(74, 73, 73);
+  font-size: 1.5rem;
+  margin-bottom: 35px;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: 100%;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(84, 84, 84);
+}
+
+.email {
+  color: rgb(168, 166, 166);
+}
+
+@media (max-width: 1024px) {
+  .about-me-container {
+    padding: 60px;
+    min-width: 600px;
+  }
+
+  .about-me-heading {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    padding: 40px;
+    min-width: 100%;
+  }
+
+  .about-me-heading {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .email {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-container {
+    padding: 20px;
+    min-width: 100%;
+  }
+
+  .about-me-heading {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .name {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .email {
+    font-size: 0.85rem;
+  }
+}

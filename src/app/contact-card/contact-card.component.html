@@ -1,0 +1,24 @@
+<div class="contact-card">
+  <div class="info-card">
+    <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
+    <div class="contact-details">
+      <div class="detail-group">
+        <span class="detail-label">Cellphone:</span>
+        <span class="detail-value">{{ contact.cellNumber }}</span>
+      </div>
+      <div class="detail-group">
+        <span class="detail-label">Address:</span>
+        <span class="detail-value">{{ contact.address }}</span>
+      </div>
+      <div class="detail-group">
+        <span class="detail-label">Email:</span>
+        <span class="detail-value">{{ contact.email }}</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bio-section">
+    <h3>Contact Bio</h3>
+    <p>{{ contact.bio }}</p>
+  </div>
+</div>
